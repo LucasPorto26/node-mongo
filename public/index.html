@@ -1,0 +1,26 @@
+<!-- public/index.html -->
+<!doctype html>
+<html ng-app="contatooh">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Bem-vindo</title>
+    
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css">
+    
+</head>
+<body ng-controller="ContatosController" class="container">
+<h1>Bem-vindo ao Tontatooh</h1>
+
+<button ng-click="incrementa()" >Novo</button>
+<p>Cadastrao de Contratados : {{total}}</p>
+
+   <div ng-view></div>
+   <script src="vendor/angular/angular.js"></script>
+   <script src="vendor/js/main.js"></script>
+   <script src="vendor/js/controllers/ContatosController.js"></script>
+   <script src="vendor/angular-route/angular-route.js"></script>
+   
+</body>
+</html>
